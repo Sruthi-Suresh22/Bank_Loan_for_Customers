@@ -1,18 +1,20 @@
 # BANK LOAN FOR CUSTOMERS
 
-### Project Description
+## Project Description
 
 This project helps to analyze the loan amount given by a financial institution to different customers of varied grades and sub-grade levels. This project takes into consideration the loan disbursement reasons, funded amount, and revolving balance values for every customer in different states and geolocation. It also takes into account the customer payment modes and last payment value.
 
-### Dataset Details
+The purpose of this project was to analyze the  given data through given KPI’s and make dashboards using BI tools and to give insights to the stakeholders.
+
+## Dataset Details
 
 - Domain : Finance
 - Project : Bank Loan of Customers
-- Datasets : There are 2 Datasets available - **Finance_1.csv** & **Finance_2.xlsx**
+- Datasets : There are 2 Datasets available - **Finance_1.csv** & **Finance_2.xlsx**.These Datasets contain information regarding the loan applicants from the period ranging from 2007 to 2016.
 - Dataset Type : Excel Data
 - Dataset Size : Each excel file has 39717 records
 
-### KPI's
+## KPI's
 
 1. Year wise loan amount Stats
 2. Grade and sub grade wise revol_bal
@@ -27,7 +29,14 @@ This project helps to analyze the loan amount given by a financial institution t
 11. Total Loan Amount
 12. Total Number of Loans Issued
 
-### SQL Analysis
+## Excel Dashboard Analysis
+![Bank Loan for Analysis](https://github.com/Sruthi-Suresh22/Bank_Loan_for_Customers_SQL/assets/162356465/a69748e9-1899-4933-b160-05f27e85f936)
+
+## Power BI Dashboard Analysis
+![Bank Loan for Analysis (1)Power BI](https://github.com/Sruthi-Suresh22/Bank_Loan_for_Customers_SQL/assets/162356465/10043759-6325-4f90-a407-750ad87e05f0)
+![Bank Loan for Analysis (2)Power BI](https://github.com/Sruthi-Suresh22/Bank_Loan_for_Customers_SQL/assets/162356465/a79dd092-429b-4b05-9054-96e103d44de2)
+
+## SQL Analysis
 
 - **Year wise loan amount Stats**
   
@@ -624,8 +633,19 @@ SELECT COUNT(id) AS "Total Number of Loans Issued" FROM finance_1;
 | 39717                        |
 </details>
 
-### EXCEL DASHBOARD
-![Bank Loan for Analysis](https://github.com/Sruthi-Suresh22/Bank_Loan_for_Customers_SQL/assets/162356465/a69748e9-1899-4933-b160-05f27e85f936)
+## Insights
+
+### KPI-1 : Year wise loan amount Stats
+
+There is exponential growth of loan amount expressed by the bank from the year 2007 to 2011 grossing  2 M to 261 Million dollars.This growth indicates that the bank has been able to extend its lending activities significantly which in turn leads to higher interest income and overall profitability for the bank.This also indicates that the bank has been successful in attracting its borrowers and expanding its customer base by implementing effective marketing strategies.
+
+### KPI-2 : Grade and sub grade wise revol_bal
+
+The balance that carries over from one month to the next is the revolving balance on that loan.
+
+
+
+
 
 
 
