@@ -16,18 +16,21 @@ The purpose of this project was to analyze the  given data through given KPI’s
 
 ## KPI's
 
-1. Year wise loan amount Stats
-2. Grade and sub grade wise revol_bal
-3. Total Payment for Verified Status Vs Non Verified Status
-4. State wise and last_credit_pull_d wise loan status
-5. Home ownership Vs last payment date stats
-6. Top 5 Loan Purpose by Sum of Loan Amount
-7. Average Interest Rate
-8. Total Funded Amount
-9. Average Funded Amount
-10. Average Debt-to-income Ratio
-11. Total Loan Amount
-12. Total Number of Loans Issued
+- Year wise loan amount Stats
+- Grade and sub grade wise revol_bal
+- Total Payment for Verified Status Vs Non Verified Status
+- State wise and last_credit_pull_d wise loan status
+- Home ownership Vs last payment date stats
+
+## Other KPI's 
+
+- Top 5 Loan Purpose by Sum of Loan Amount
+- Average Interest Rate
+- Total Funded Amount
+- Average Funded Amount
+- Average Debt-to-income Ratio
+- Total Loan Amount
+- Total Number of Loans Issued
 
 ## Excel Dashboard Analysis
 ![Bank Loan for Analysis](https://github.com/Sruthi-Suresh22/Bank_Loan_for_Customers_SQL/assets/162356465/a69748e9-1899-4933-b160-05f27e85f936)
@@ -637,11 +640,63 @@ SELECT COUNT(id) AS "Total Number of Loans Issued" FROM finance_1;
 
 ### KPI-1 : Year wise loan amount Stats
 
-There is exponential growth of loan amount expressed by the bank from the year 2007 to 2011 grossing  2 M to 261 Million dollars.This growth indicates that the bank has been able to extend its lending activities significantly which in turn leads to higher interest income and overall profitability for the bank.This also indicates that the bank has been successful in attracting its borrowers and expanding its customer base by implementing effective marketing strategies.
+- There is exponential growth of loan amount expressed by the bank from the year 2007 to 2011 grossing  2 M to 261 Million dollars.
+- This growth indicates that the bank has been able to extend its lending activities significantly which in turn leads to higher interest income and overall profitability for the bank.
+- This also indicates that the bank has been successful in attracting its borrowers and expanding its customer base by implementing effective marketing strategies.
 
 ### KPI-2 : Grade and sub grade wise revol_bal
 
-The balance that carries over from one month to the next is the revolving balance on that loan.
+- The balance that carries over from one month to the next is the revolving balance on that loan. 
+- From the analysis done so far, we can easily conclude that B5 subgrade has highest sum of revolving balance while G5 has the lowest one.
+- This means that borrowers having G grade have the lowest accumulation of revolving credits.
+- A1 grade borrowers have lowest average revolving balance while G5 has the highest one and this directly affects the revolving utilization.
+- A low revolving balance is generally considered better for  financial health because of low credit utilization, having low interest costs, minimal financial stress and high creditworthiness.
+
+### KPI-3 : Total Payment for Verified Status Vs Non Verified Status
+
+- Verification status refers to  the verification of the borrowers account wrt the documents submitted.
+- From the analysis, 57% have Verified Status and 43% have Non-verified status.
+- It can be noted that even though the borrowers verified is more than the non verified borrowers, the bank has to make sure that the non verified bank accounts are verified at the earliest.
+
+### KPI-4 : State wise and last_credit_pull_d wise loan status
+
+- From the analysis, we can understand that Charged off (14.17%) is deemed unlikely to be repaid.
+- Current (2.87%) represent that portion of the loan that are being paid on time and are not in default.
+- Fully paid (82.96%) are the loans which have been successfully repaid.
+
+### KPI-5 : Home ownership Vs last payment date stats
+
+- This analysis provides insights into the financial behavior and the risk profile of the borrowers.
+- The mortgage category has a significant portion of the payment by the borrowers and are actively making payments.
+- The rent category suggests that renters who may not own homes but are paying rent are also making payments actively.
+- The own category has the least payments which indicates that borrowers who own homes are making fewer payments and it is important for the bank to monitor them.
+
+### Other KPI's
+
+- Average Interest Rate comes to 12.02% which is advisable from the banks point of view. The bank has to take into consideration the prevailing market rate, risk profile of the borrowers and the profitability targets of the bank.
+- The Average DTI (debt-to –income) ratio comes 13.32%. It is generally considered favorable. This can be advantageous for the bank as it reduces the risk of default on the loan .
+- The revolving utilization ratio is 48.83% which is risky for a Bank. The ratio should ideally be less than 30% as it indicates that the borrower is not overly reliant on credit and has more available credit for unforeseen expenses.
+
+## Recommendations
+
+- The bank should continue leveraging its successful lending practices and marketing strategies to sustain and further enhance its growth trajectory.
+- The bank should focus on monitoring and managing revolving balances, particularly for borrowers in higher-risk subgrades, to mitigate potential risks and optimize overall financial health.
+- It's crucial for the bank to prioritize the verification of non-verified accounts promptly. Ensuring all borrower accounts are verified promptly enhances the bank's risk management practices, strengthens customer trust, and reduces the likelihood of fraudulent activities. Therefore, the bank should implement proactive measures to expedite the verification process for non-verified accounts, ensuring compliance with regulatory requirements and safeguarding against potential risks.
+- The bank should focus on strategies to minimize the proportion of charged-off loans by enhancing risk assessment processes and implementing proactive measures to identify and manage potential default risks early. Additionally, efforts should be directed towards maintaining the current and fully paid loan categories through effective customer relationship management and financial education initiatives. By optimizing loan portfolio management practices, the bank can mitigate risks, improve profitability, and enhance overall financial health.
+- The bank should closely monitor borrowers in the own category to ensure timely payments and mitigate potential default risks. Additionally, strategies should be developed to engage with borrowers in this category and encourage proactive payment behavior. By effectively managing borrowers across different categories of home ownership, the bank can minimize default risks and maintain a healthy loan portfolio.
+
+
+## Conclusion
+
+- The bank has experienced significant growth in loan amounts over the years, indicating successful lending activities and potential for higher interest income and profitability.
+- Understanding the distribution of revolving balances across different grades and sub-grades provides insights into borrower behavior and risk profiles, highlighting opportunities for targeted risk management strategies.
+- While a majority of borrowers have verified accounts, it's essential for the bank to prioritize the verification of non-verified accounts to enhance risk management practices and strengthen customer trust.
+- The distribution of loan statuses within the bank's portfolio reflects the performance and risk profile of its loans, emphasizing the importance of proactive risk management and customer relationship management.
+- Analysis of payment behavior across different categories of home ownership underscores the need for targeted monitoring and engagement strategies, particularly for borrowers who own homes and may be making fewer payments.
+- These insights provide valuable information for the bank to optimize its lending practices, enhance risk management, and strengthen customer relationships. By leveraging these insights effectively, the bank can mitigate risks, improve profitability, and maintain a healthy loan portfolio.
+
+
+ 
 
 
 
